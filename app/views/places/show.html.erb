@@ -50,10 +50,13 @@
 </div>
 
 <div class="clear"></div>
+<font color="168FF5">
 <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
   <%= f.input :message %>
   <%= f.input :rating, as: :select, collection: Comment::RATINGS %>  
   <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+    
+</font>
 <% end %>
 
 <!-- Button trigger modal -->
@@ -85,9 +88,9 @@
 
 
 <div class="clear"></div>
-
+<font color="168FF5">
 <h1>Comments</h1>
-
+</font>
 <% @place.comments.each do |comment| %>
 <div class="col-12">
       <blockquote>
@@ -102,7 +105,9 @@
 </div>
 
 <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+  <font color="168FF5">
   <%= f.input :caption %>
+  </font>
   <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
 <% end %>
 
