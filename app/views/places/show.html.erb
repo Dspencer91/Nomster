@@ -104,10 +104,10 @@
   <% end %>
 </div>
 
-<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+<% simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+    <%= f.input :caption, %>
   <font color="168FF5">
-  <%= f.input :caption %>
-  </font>
   <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+  </font>
 <% end %>
 

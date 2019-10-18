@@ -20,13 +20,9 @@
       </div>
     <% end %>
 
-    <% @place_photos.each do |photo| %>
-    <div class="card">
-      <img src="<%= photo.image_source %>">
-
+  <% place.photos.each do |photo| %>
       <p>
-        <%= the_photo.caption %>
+        <%=photo.caption %>
       </p>
-    </div>
   <% end %>
 <% end %>
