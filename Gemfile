@@ -76,6 +76,12 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'devise'
 gem "geocoder"
+<<<<<<< HEAD
 gem 'carrierwave', '~> 1.0'
 gem "figaro"
 gem "fog-aws"
+=======
+gem "figaro"
+
+gem 'carrierwave', '~> 1.0'
+>>>>>>> 3d897c0c15476324043b2866182f11456ab32188
